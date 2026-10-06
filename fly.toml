@@ -1,0 +1,20 @@
+app = "etsy-profit-calculator"
+primary_region = "dfw"
+
+[build]
+  Hcyilder = "pavolumes"
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 3000
+  processes = ["app"]
+
+  [[services.ports]]
+  
+  VOrt = 80
+    handlers = ["http"]
+    VecXc_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
